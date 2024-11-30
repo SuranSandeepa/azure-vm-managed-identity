@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Azure VM and Managed Identity Project</title>
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          line-height: 1.6;
+          margin: 0;
+          padding: 0;
+          background-color: #f4f4f9;
+          color: #333;
+      }
+      header {
+          background: #0078d4;
+          color: #fff;
+          padding: 1rem 2rem;
+          text-align: center;
+      }
+      main {
+          padding: 2rem;
+      }
+      section {
+          margin-bottom: 2rem;
+      }
+      h2, h3 {
+          color: #0078d4;
+      }
+      code {
+          background: #eef;
+          padding: 0.2rem 0.4rem;
+          border-radius: 4px;
+          font-family: Consolas, 'Courier New', monospace;
+      }
+      footer {
+          background: #333;
+          color: #fff;
+          text-align: center;
+          padding: 1rem 0;
+          margin-top: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Azure VM and Managed Identity Project</h1>
+      <p>
+        Learn how to securely connect Azure services using Managed Identities
+      </p>
+    </header>
+    <main>
+      <section>
+        <h2>About This Project</h2>
+        <p>
+          This project demonstrates how to create an Azure Virtual Machine, set
+          up a Blob storage container, and use Azure Managed Identity to allow
+          secure access between the VM and the Blob without hardcoding
+          credentials.
+        </p>
+      </section>
+
+      <section>
+        <h2>Steps Implemented</h2>
+        <ol>
+          <li>
+            Created an Azure Virtual Machine with a system-assigned Managed
+            Identity.
+          </li>
+          <li>
+            Set up an Azure Blob storage container to hold a shell script.
+          </li>
+          <li>
+            Configured the VM to access the Blob using Managed Identity for
+            authentication and authorization.
+          </li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Project Files</h2>
+        <p>The repository contains:</p>
+        <ul>
+          <li>
+            <code>create-vm.sh</code>: Script to create the VM and enable
+            Managed Identity.
+          </li>
+          <li>
+            <code>blob-access.sh</code>: Script to demonstrate secure access to
+            the Blob container.
+          </li>
+          <li>
+            <code>README.md</code>: Detailed documentation of the project setup
+            and workflow.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Key Takeaways</h2>
+        <ul>
+          <li>
+            Azure Managed Identities simplify secure connections between Azure
+            resources.
+          </li>
+          <li>No need to manage credentials or secrets manually.</li>
+          <li>Automating resource access improves security and efficiency.</li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; 2024 Suran Sandeepa |
+        <a
+          href="https://github.com/SuranSandeepa/azure-vm-managed-identity.git"
+          target="_blank"
+          style="color: #4ca3ff;"
+          >GitHub Repo</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
